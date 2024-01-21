@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>New Mock</Title>
+      <Shortcut>mock</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[var $name$Mock = new Mock<$Interface$>();]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <Default>name</Default>
+        </Literal>
+        <Literal>
+          <ID>Interface</ID>
+          <Default>IInterface</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Mock of</Title>
+      <Shortcut>mockof</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[var $name$Mock = Mock.Of<$Interface$>();]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <Default>name</Default>
+        </Literal>
+        <Literal>
+          <ID>Interface</ID>
+          <Default>IInterface</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Setup with Returns</Title>
+      <Shortcut>returns</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[$mock$.Setup(x => x.$MethodProperty$$end$).Returns($value$);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>mock</ID>
+          <Default>mock</Default>
+        </Literal>
+        <Literal>
+          <ID>MethodProperty</ID>
+          <Default>name</Default>
+        </Literal>
+        <Literal>
+          <ID>value</ID>
+          <Default>value</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Setup with Throws</Title>
+      <Shortcut>throws</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[$mock$.Setup(x => x.$MethodProperty$$end$).Throws($exception$);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>mock</ID>
+          <Default>mock</Default>
+        </Literal>
+        <Literal>
+          <ID>MethodProperty</ID>
+          <Default>name</Default>
+        </Literal>
+        <Literal>
+          <ID>exception</ID>
+          <Default>new Exception()</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Verify</Title>
+      <Shortcut>verify</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[$mock$.Verify(x => x.$MethodProperty$$end$);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>mock</ID>
+          <Default>mock</Default>
+        </Literal>
+        <Literal>
+          <ID>MethodProperty</ID>
+          <Default>name</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>It.IsAny</Title>
+      <Shortcut>any</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[It.IsAny<$type$>()$end$]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <Default>object</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>It.Is</Title>
+      <Shortcut>itis</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[It.Is<type>($value$)$end$]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>value</ID>
+          <Default>value</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>Moq</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
